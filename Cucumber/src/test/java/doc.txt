@@ -1,0 +1,46 @@
+# Testing OpenCart using Cucumber
+This directory contains the cucumber files for testing the Shopping Cart module of the OpenCart application.
+
+## Running the tests
+Run `mvn test` to run all the tests.
+
+## Feature files
+The behaviors we are testing are in the feature files inside the [resources/hellocucumber](resources/hellocucumber) directory:
+
+1. add_to_cart.feature - Tests customer's ability to add products to cart multiple times
+2. admin_manage_cart.feature - Tests admin's ability to modify cart quantities
+
+## Key Test Scenarios
+
+### User Story 1: User adds a product to cart twice
+**Preconditions:** 
+- OpenCart is running and accessible
+- User account exists
+- Product is available in stock
+- User is logged in
+
+**Expected outcome:** 
+- Product is added to cart with quantity of 2
+- Cart total is updated correctly
+
+### User Story 2: Admin changes quantity to one
+**Preconditions:**
+- Admin account exists and is logged in
+- Cart contains product with quantity > 1
+- Admin has permissions to modify orders
+
+**Expected outcome:**
+- Quantity is successfully changed to 1
+- Cart total is updated correctly
+
+## Edge Cases Covered
+1. Product stock availability checks
+2. Invalid quantity inputs
+3. Session management
+4. Concurrent cart modifications
+5. Cart calculation accuracy
+6. Permission validation
+7. Error handling scenarios
+
+## Step files
+The step files in the [src/test/java/hellocucumber](src/test/java/hellocucumber) directory contain the code that defines how each sentence in the feature files is translated to Selenium actions.
