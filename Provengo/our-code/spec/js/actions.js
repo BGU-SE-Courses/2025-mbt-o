@@ -30,17 +30,6 @@ function editProductQuantity(session) {
   }
 }
 
-//user actions
-function loginUser(session) {
-  with(session) {
-    click(xpathsu.loginWindow.toolbox)
-    click(xpathsu.loginWindow.loginButton)
-    writeText(xpathsu.loginWindow.emailBox, userCredentials[0])
-    writeText(xpathsu.loginWindow.passwordBox, userCredentials[1])
-    click(xpathsu.loginWindow.submitLogin)
-  }
-}
-
 function searchProduct(session) {
   with(session) {
     writeText(xpathsu.search.searchBox, "iphone", true)

@@ -36,13 +36,6 @@ const xpaths = {
 }
 
 const xpathsu = {
-  loginWindow: {
-    toolbox: '//i[2]',
-    loginButton: '//body/div[1]/nav[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/div[1]/ul[1]/li[2]/a[1]',
-    emailBox:  '//input[contains(@name, "email")]',
-    passwordBox:  '//input[contains(@type, "password")]',
-    submitLogin:  '//*[@id=\'form-login\']/div/button[1]'
-  }, 
   search: {
     searchBox: '//input[@name="search"]',
     submitSearch: '//form[1]/button[1]'
@@ -51,7 +44,5 @@ const xpathsu = {
   searchResults: {
     addToCartButton: '//form[1]/div[1]/button[1]'
   }
-
-
 }
 
