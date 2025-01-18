@@ -1,4 +1,4 @@
-# Testing $$*TODO* software name$$ using Provengo
+# Testing "OUR-CODE" using Provengo
 This directory contains the Provengo project for testing  "our-code".
 
 
